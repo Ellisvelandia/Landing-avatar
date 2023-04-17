@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="app.js" defer></script>
   <title>Avatar</title>
 </head>
+
 <body>
-  
+
   <div class="sidebar">
-    <div class="menu"></div>
+    <div class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
 
     <div class="image">
       <img src="images/avatar1.jpg" alt="Image about avatar">
+      <i class="fa-solid fa-play" id="play"></i>
+    </div>
+
+    <div class="links">
+      <div class="link">
+        <i class="fa-solid fa-house"></i>
+        <a href="#" class="sidelink">Home</a>
+      </div>
+
+      <div class="link">
+        <i class="fa-sharp fa-solid fa-film"></i>
+        <a href="#" class="sidelink">Movies</a>
+      </div>
+
+      <div class="link">
+        <i class="fa-solid fa-tv"></i>
+        <a href="#" class="sidelink">Shows</a>
+      </div>
+
+      <div class="link">
+        <i class="fa-brands fa-imdb"></i>
+        <a href="#" class="sidelink">Top IMDB</a>
+      </div>
+
+      <div class="link">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <a href="#" class="sidelink">Login</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="description">
+    <div class="movie-description">
+      <h2>AVATAR</h2>
+      <p>It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed
+        human
+        threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.</p>
+    </div>
+
+    <div class="movies">
+
+      <div class="movie">
+        <div class="film">
+          <img src="images/blackadam.jpg" alt="blackadam picture">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <h3>Black Adam</h3>
+      </div>
+
+      <div class="movie">
+        <div class="film">
+          <img src="images/blackpanther.jpg" alt="blackpanther picture">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <h3>Black Panher</h3>
+      </div>
+
+
+      <div class="movie">
+        <div class="film">
+          <img src="images/ironman.jpg" alt="ironman picture">
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+        <h3>Iron Man</h3>
+      </div>
     </div>
   </div>
+
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+  </div>
+
+  <div class="button">
+    <button>Sign up <i class="fa-solid fa-right-to-bracket"></i></button>
+  </div>
 </body>
+
 </html>

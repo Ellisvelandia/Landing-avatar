@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%),
+    url("images/avatar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.sidebar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 10%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  transition: 1s ease;
+}
+
+.sidebar.slide {
+  width: 80px;
+}
+
+i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.menu i {
+  font-size: 30px;
+}
+
+.image {
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.image #play {
+  position: absolute;
+  font-size: 70px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#play.resize {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.image #play:hover {
+  scale: 1.2;
+  text-shadow: 0 0 10px #00a2ff, 0 0 20px #00a2ff;
+}
+
+.sidelink {
+  color: #fff;
+  text-align: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sidelink.none {
+  display: none;
+}
+
+.movies {
+  display: flex;
+  width: 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.description {
+  position: fixed;
+  bottom: 30px;
+  left: 320px;
+  right: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.description.change {
+  left: 90px;
+}
+
+.movie-description {
+  color: #ccc;
+  font-size: 40px;
+}
+
+.movie-description p {
+  color: #bbb;
+  font-size: 12px;
+  width: 500px;
+}
+
+.film {
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film i {
+  position: absolute;
+  font-size: 30px;
+  transition: 0.7s ease;
+}
+
+.film img {
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.movie {
+  cursor: pointer;
+  scale: 1;
+  transition: 0.7s ease;
+}
+
+.movie h3 {
+  color: #ccc;
+}
+
+.movie:hover {
+  scale: 1.1;
+  filter: brightness(1.5) saturate(1.5);
+}
+
+.social-links {
+  position: absolute;
+  right: 20px;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links i {
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.social-links i:hover {
+  text-shadow: 0 0 10px #00a2ff, 0 0 20px #00a2ff, 0 0 30px #00a2ff,
+    0 0 50px #00a2ff;
+}
+
+  button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  background: #00a2ff;
+  float: right;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  top: 20px;
+  right: 20px;
+  padding-right: 45px;
+  cursor: pointer;
+  transition:  0.7 ease;
+}
+
+button:hover{
+  box-shadow:  0 0 10px #00a2ff;
+}
+
+button i {
+  position: absolute;
+  top: 12px;
+  margin-left: 10px;
+}
