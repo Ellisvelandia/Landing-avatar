@@ -193,7 +193,7 @@ i {
     0 0 50px #00a2ff;
 }
 
-  button {
+button {
   position: relative;
   padding: 10px 20px;
   color: #fff;
@@ -207,15 +207,66 @@ i {
   right: 20px;
   padding-right: 45px;
   cursor: pointer;
-  transition:  0.7 ease;
+  transition: 0.7 ease;
 }
 
-button:hover{
-  box-shadow:  0 0 10px #00a2ff;
+button:hover {
+  box-shadow: 0 0 10px #00a2ff;
 }
 
 button i {
   position: absolute;
   top: 12px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .description {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .movie-description p {
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .movies {
+    width: auto;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .description {
+    width: 80%;
+    padding-inline: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .description.change {
+    left: 50px;
+  }
+  .movie-description {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .movie-description p {
+    width: 80%;
+  }
+
+  .movies {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  button{
+    font-size: 12px;
+  }
+
+  button i {
+    font-size: 12px;
+  }
 }
